@@ -67,13 +67,13 @@ function cambiarModelo(tipo) {
       break;
 
     case 'terreno':
-      cargarModelo('/public/dark.glb');
+      cargarModelo('dark.glb');
       camera.position.set(0, 7, 0);
       camera.lookAt(0, 0, 0);
       break;
 
     case 'agua':
-      cargarModelo('/public/agua.glb');
+      cargarModelo('agua.glb');
       camera.position.set(0, 7, 0);
       camera.lookAt(0, 0, 0);
       break;
