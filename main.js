@@ -60,7 +60,7 @@ function cambiarModelo(tipo) {
 
   switch (tipo) {
     case 'vista3d':
-      cargarModelo('/public/model.glb');
+      cargarModelo('/public/terreno.glb');
       rotar = true;
       camera.position.set(0, 2, 3);
       camera.lookAt(0, 0, 0);
@@ -73,7 +73,7 @@ function cambiarModelo(tipo) {
       break;
 
     case 'agua':
-      cargarModelo('/public/rios.glb');
+      cargarModelo('/public/agua.glb');
       camera.position.set(0, 7, 0);
       camera.lookAt(0, 0, 0);
       break;
