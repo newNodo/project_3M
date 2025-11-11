@@ -79,19 +79,19 @@ function cambiarModelo(tipo) {
       break;
 
     case 'vegetacion':
-      cargarModelo('/public/vegetacion.glb');
+      cargarModelo('vegetacion.glb');
       camera.position.set(0, 7, 0);
       camera.lookAt(0, 0, 0);
       break;
 
     case 'caminos':
-      cargarModelo('/public/caminos.glb');
+      cargarModelo('caminos.glb');
       camera.position.set(0, 7, 0);
       camera.lookAt(0, 0, 0);
       break;
 
         case 'caminos':
-      cargarModelo('/public/caminos.glb');
+      cargarModelo('caminos.glb');
       camera.position.set(0, 7, 0);
       camera.lookAt(0, 0, 0);
       break;
@@ -120,19 +120,3 @@ window.addEventListener('resize', () => {
 document.getElementById('modeloSelect').addEventListener('change', (e) => {
   cambiarModelo(e.target.value);
 });
-
-const tLoader = new THREE.TextureLoader();
-const nuevaTextura = tLoader.load('/public/texturas/vegetacion.png');
-
-document.getElementById('cambiarTexturaBtn').addEventListener('click', () => {
-  if (!modelo) return;
-
-  modelo.traverse((child) => {
-    if (child.isMesh && child.parent.name === 'Terrain') {
-      child.material.map = nuevaTextura;
-      child.material.needsUpdate = true;
-    }
-  });
-
-});
-
