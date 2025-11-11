@@ -60,7 +60,7 @@ function cambiarModelo(tipo) {
 
   switch (tipo) {
     case 'vista3d':
-      cargarModelo('/public/terreno.glb');
+      cargarModelo('terreno.glb');
       rotar = true;
       camera.position.set(0, 2, 3);
       camera.lookAt(0, 0, 0);
