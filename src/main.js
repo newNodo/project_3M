@@ -120,3 +120,18 @@ window.addEventListener('resize', () => {
 document.getElementById('modeloSelect').addEventListener('change', (e) => {
   cambiarModelo(e.target.value);
 });
+
+
+// --- Prueba de conexión JS ---
+const btn = document.getElementById('btnContador');
+if (btn) {
+  let contador = 0;
+  btn.addEventListener('click', () => {
+    contador++;
+    btn.textContent = contador;
+    console.log(`Contador: ${contador}`);
+  });
+  console.log("✅ main.js cargado correctamente.");
+} else {
+  console.error("❌ No se encontró el botón de prueba.");
+}
