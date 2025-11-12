@@ -1,5 +1,8 @@
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-  // sin 'base'
+  base: './', // 👈 esto fuerza rutas relativas
+  build: {
+    outDir: 'dist',
+  },
 });
