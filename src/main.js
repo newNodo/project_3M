@@ -60,7 +60,7 @@ function cambiarModelo(tipo) {
 
   switch (tipo) {
     case 'vista3d':
-      cargarModelo('terreno.glb');
+      cargarModelo('/terreno.glb');
       rotar = true;
       camera.position.set(0, 2, 3);
       camera.lookAt(0, 0, 0);
@@ -79,19 +79,19 @@ function cambiarModelo(tipo) {
       break;
 
     case 'vegetacion':
-      cargarModelo('./vegetacion.glb');
+      cargarModelo('/vegetacion.glb');
       camera.position.set(0, 7, 0);
       camera.lookAt(0, 0, 0);
       break;
 
     case 'caminos':
-      cargarModelo('caminos.glb');
+      cargarModelo('/caminos.glb');
       camera.position.set(0, 7, 0);
       camera.lookAt(0, 0, 0);
       break;
 
         case 'caminos':
-      cargarModelo('caminos.glb');
+      cargarModelo('/caminos.glb');
       camera.position.set(0, 7, 0);
       camera.lookAt(0, 0, 0);
       break;
